@@ -52,7 +52,7 @@ ul {
    display: grid;
    grid-template-areas:
        'amount' 'name' 'price',
-       'amount' 'ordertype' 'price';
+       'amount' 'item-option' 'price';
    grid-template-columns: 1fr 2fr 1fr;
 }
 
