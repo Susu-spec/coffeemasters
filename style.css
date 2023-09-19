@@ -46,7 +46,7 @@ ul {
    border-radius: 5px;
 }
 
-.list {
+.item {
    border-bottom: 2px solid #7f4f24;
    margin: 20px;
    display: grid;
