@@ -45,6 +45,7 @@ ul {
    box-shadow: 2px;
    border-radius: 5px;
    color: #f1e3d3;
+   border: 2px #black;
 }
 
 .list {
