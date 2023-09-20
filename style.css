@@ -44,8 +44,8 @@ ul {
 .order {
    box-shadow: 2px;
    border-radius: 5px;
-   color: #f1e3d3;
-   border: 2px #black;
+   color: #0000;
+   border: 2px;
 }
 
 .list {
@@ -64,8 +64,9 @@ ul {
    display: grid;
    grid-template-areas:
        'amount' 'name' 'price',
-       'amount' 'item-optuons-list' 'price';
-   grid-template-columns: 1fr 2fr 1fr;
+       'amount' 'item-options-list' 'price';
+   grid-template-columns: 1fr 2fr 1fr,
+   			  1fr 2fr 1fr;
 }
 
 
