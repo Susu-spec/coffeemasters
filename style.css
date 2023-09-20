@@ -47,18 +47,17 @@ ul {
 }
 
 .item {
-   border-bottom: 2px solid #7f4f24;
+   border-bottom: 2px solid #black;
    margin: 20px;
    display: grid;
    grid-template-areas:
        'amount' 'name' 'price',
-       'amount' 'item-option' 'price';
+       'amount' 'item-options' 'price';
    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .items {
    font-weight: normal;
-   color: #ddb892;
    font-size: 14px;
 }
 
@@ -80,8 +79,8 @@ ul {
    font-size: 14px;
 }
 
-.ordertype {
+.item-options {
    font-weight: normal;
-   grid-area: 'ordertype';
+   grid-area: 'item-options';
    font-size: 12px;
 }
