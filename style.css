@@ -44,22 +44,29 @@ ul {
 .order {
    box-shadow: 2px;
    border-radius: 5px;
+   color: #f1e3d3;
 }
 
-.item {
-   border-bottom: 2px solid #black;
-   margin: 20px;
-   display: grid;
-   grid-template-areas:
-       'amount' 'name' 'price',
-       'amount' 'item-options' 'price';
-   grid-template-columns: 1fr 2fr 1fr;
+.list {
+   margin: 0;
+   padding: 10px;
 }
 
 .items {
    font-weight: normal;
+   color: #ddb892;
    font-size: 14px;
 }
+
+.item {
+   border-bottom: 2px solid #7f4f24;
+   display: grid;
+   grid-template-areas:
+       'amount' 'name' 'price',
+       'amount' 'item-optuons-list' 'price';
+   grid-template-columns: 1fr 2fr 1fr;
+}
+
 
 .amount {
    font-weight: normal;
@@ -79,8 +86,8 @@ ul {
    font-size: 14px;
 }
 
-.item-options {
+.item-options-list {
    font-weight: normal;
-   grid-area: 'item-options';
+   grid-area: 'item-options-list';
    font-size: 12px;
 }
