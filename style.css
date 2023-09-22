@@ -2,13 +2,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open-sans', sans-serif;
+    background-color: #efefef;
 }
 
 header {
     background-color: #43281c;
     display: flex;
     justify-content: center;
+    width: 100%;
     padding: 5px;
+}
+
+table {
+   border-collapse: separate;
+   border-spacing: 50px 0px;
 }
 
 ul {
@@ -30,50 +37,55 @@ ul {
 }
 
 .page {
-    margin: 30px;
+    margin: 15px;
     padding: 15px;
     display: grid;
-    grid-template-areas: "order payment";
+    grid-template-areas: 
+    "order payment"
+    "total total";
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 30px;
     grid-column-gap: 50px;
 }
 
 .order {
-   background-color: #eee1d5;
    grid-area: 'order';
 }
 
 .list {
-   margin: 20px;
-   padding: 10px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
 .items {
    font-weight: normal;
    color: #885a2d;
    font-size: 16px;
-   margin: 10px;
 }
 
 .item {
    border-bottom: 2px solid #DDB892;
    display: grid;
-   padding: 10px 0;
+   padding: 15px 0;
    grid-template-columns: 1fr 8fr 1fr;
    grid-template-areas:
       "amount name price"
       "amount options price";
-    row-gap: 8px;
+    row-gap: 10px;
 }
 
+.butter {
+   border: none;
+   margin-bottom: 20px;
+}
 .box {
    background-color: #eee1d5;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
-    padding: 15px;
-    margin-bottom: 20px;
-    width: 100%;
+   border-radius: 5px;
+   box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+   padding: 15px;
+   margin-bottom: 20px;
+   width: 100%;
 }
 
 
@@ -94,9 +106,66 @@ ul {
 
 .item-options-list {
    grid-area: options;
+   padding: 10px;
    color: #B08968;
    list-style: none;
    margin: 0;
    padding: 0;
    font-size: 14px;
 }
+
+.namebox{
+   background-color: #eee1d5;
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.user_input {
+   background-color: rgba(0,0,0,0);
+   border: 2px #885a2d solid;
+   padding: 8px;
+   border-radius: 100px;
+   width: 95%;
+   text-indent: 18px;
+   font-size: 18px;
+}
+
+.user_input_label {
+   color: #885a2d;
+   background-color: #eee1d5;
+   font-size: 11px;
+   position: absolute;
+   left: 25px;
+   top: -7px;
+   padding: 0 2px;
+}
+
+.total {
+   grid-area: total;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.total_table {
+   width: 100%;
+   max-width: 500px;
+   margin-bottom: 30px;
+}
+
+td {
+   padding: 10px;
+}
+
+.place {
+   background-color: #deb993;
+   border: none;
+   padding: 10px 30px;
+   width: 100%;
+   border-radius: 100px;
+   font-size: 16px;
+}
+
+
+

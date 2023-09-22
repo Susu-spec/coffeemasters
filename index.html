@@ -12,14 +12,14 @@
 <body>
     <header>
         <img class="coffeelogo" src="coffee_masters_logo.png" alt="logo" width="23px" height="25px"><h1 class="coffeetitle">Coffee Masters</h1>
-    </header>
+	</header>
     <main>
 	<section class="page">
 		<div class="order box">
 			<h2 class="items">ITEMS</h2>
 			<ul class="list">
 				<li class="item">
-					<div class="item-amount">1X</div>
+					<div class="item-amount">1x</div>
 					<div class="item-name">Cappucino</div>
 					<div class="item-price">$6.00</div>
 					<ul class="item-options-list">
@@ -27,16 +27,16 @@
             		</ul>
 				</li>
 				<li class="item">
-					<div class="item-amount">1X</div>
+					<div class="item-amount">1x</div>
 					<div class="item-name">Cappucino</div>
 					<div class="item-price">$7.90</div>
 					<ul class="item-options-list">
-						<li class="item-option">Double Espresso Shot</li>
 						<li class="item-option">Almond Milk</li>
+						<li class="item-option">Double Espresso Shot</li>
 					</ul>
 				</li>
-				<li class="item">
-					<div class="item-amount">1X</div>
+				<li class="item butter">
+					<div class="item-amount">1x</div>
 					<div class="item-name">Croissant</div>
 					<div class="item-price">$5.37</div>
 					<ul class="item-options-list">
@@ -46,18 +46,45 @@
 			</ul>
 		</div>
 		<div class="payment">
-			<div class="namebox box">
-				<form>
-					<input type="text">
-				</form>
+			<div class="box">
+				<h2 class="items">NAMES</h2>
+				<div class="namebox">
+					<label class="user_input_label" for="name">Name for order</label>
+					<input type="text" id="name" class="user_input">
+				</div>
 			</div>
-			<div class="cardbox box">
-				<form>
-					<input class="card" type="text">
-					<input class="ccv" type="text">
-				</form>
+				<div class="box">
+					<h2 class="items">PAYMENT</h2>
+					<div class="namebox">
+						<label class="user_input_label" for="card">Card number</label>
+						<input type="text" id="card" class="user_input">
+					</div>
+					<div class="namebox">
+						<label class="user_input_label" for="card">CCV number</label>
+						<input type="text" id="ccv" class="user_input">
+					</div>
+				</div>
 			</div>
 		</div>
+		<section class="total">
+			<table class="total_table">
+				<tbody>
+					<tr>
+						<td>Subtotal:</td>
+						<td>$19.27</td>
+					</tr>
+					<tr>
+						<td>Tax:</td>
+						<td>$0.96</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold">Total:</td>
+						<td style="font-weight: bold">$20.23</td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="place" type="button">Place order</button>
+		</section>
 	</section>
 </body>
 </html>
