@@ -14,8 +14,8 @@ header {
 }
 
 table {
-   border-collapse: separate;
-   border-spacing: 50px 0px;
+   width: 100%;
+   border-collapse: collapse;
 }
 
 ul {
@@ -50,6 +50,11 @@ ul {
 
 .order {
    grid-area: 'order';
+}
+
+.payment {
+   grid-area: 'payment';
+   margin-right: 30px;
 }
 
 .list {
@@ -130,6 +135,10 @@ ul {
    font-size: 18px;
 }
 
+.short_input {
+   max-width: 200px;
+}
+
 .user_input_label {
    color: #885a2d;
    background-color: #eee1d5;
@@ -149,13 +158,13 @@ ul {
 }
 
 .total_table {
-   width: 100%;
    max-width: 500px;
    margin-bottom: 30px;
 }
 
 td {
    padding: 10px;
+   font-size: 17px;
 }
 
 .place {
@@ -167,5 +176,12 @@ td {
    font-size: 16px;
 }
 
+.right {
+   text-align: right;
+}
+
+.bold {
+   font-weight: bold;
+}
 
 
