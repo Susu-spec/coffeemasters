@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: 'Open-sans', sans-serif;
     background-color: #efefef;
-    display: flex;
 }
 
 header {
@@ -55,7 +54,7 @@ ul {
 
 .payment {
    grid-area: 'payment';
-   margin-right: 30px;
+   margin-right: 10px;
 }
 
 .list {
