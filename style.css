@@ -55,7 +55,7 @@ ul {
 
 .payment {
    grid-area: 'payment';
-   margin-right: 10px;
+   margin-right: 20px;
    padding-right: 10px;
 }
 
