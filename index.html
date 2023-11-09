@@ -11,12 +11,14 @@
 </head>
 <body>
     <main>
-		<div class=" banner">
-			<img class="coffeelogo" src="coffee_masters_logo.png" alt="logo" width="23px" height="25px">
-			<h1 class="coffeetitle">Coffee Masters</h1>
-		</div>
+		<header>
+			<nav class=" banner">
+				<img class="coffeelogo" src="coffee_masters_logo.png" alt="logo" width="23px" height="25px">
+				<h1 class="coffeetitle">Coffee Masters</h1>
+			</nav>
+		</header>
 		<div class="page">
-			<div class="order box">
+			<section class="order box">
 				<h2 class="items">ITEMS</h2>
 				<ul class="list">
 					<li class="item">
@@ -45,28 +47,27 @@
 						</ul>
 					</li>
 				</ul>
-			</div>
-			<div class="payment">
+			</section>
+			<section class="payment">
 				<div class="box">
 					<h2 class="items">NAMES</h2>
 					<div class="namebox">
 						<label class="user_input_label" for="name">Name for order</label>
-						<input type="text" id="name" class="user_input">
+						<input type="text" id="name" class="user_input" maxlength="20">
 					</div>
 				</div>
-					<div class="box">
-						<h2 class="items">PAYMENT</h2>
-						<div class="namebox">
-							<label class="user_input_label" for="card">Card number</label>
-							<input type="text" id="card" class="user_input">
-						</div>
-						<div class="namebox">
-							<label class="user_input_label" for="card">CCV number</label>
-							<input type="text" id="ccv" class="user_input short_input">
-						</div>
+				<div class="box">
+					<h2 class="items">PAYMENT</h2>
+					<div class="namebox">
+						<label class="user_input_label" for="card">Card number</label>
+						<input type="number" pattern=".{16}" id="card" class="user_input" title="Enter 16 digits">
+					</div>
+					<div class="namebox">
+						<label class="user_input_label" for="card">CCV number</label>
+						<input type="number" pattern=".{3}" id="ccv" class="user_input short_input" title="Enter 3 characters">
 					</div>
 				</div>
-			</div>
+			</section>
 			<section class="total">
 				<table class="total_table">
 					<tbody>
@@ -84,8 +85,9 @@
 						</tr>
 					</tbody>
 				</table>
-				<button href="#" class="place">Place order</button>
+				<button class="place"><a href="#">Place order</a></button>
 			</section>
 		</div>
+	</main>
 </body>
 </html>
