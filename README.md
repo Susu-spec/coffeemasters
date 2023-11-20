@@ -1,4 +1,4 @@
-# Google Frontend Reimagining
+# Coffeemasters Checkout page
 
 This is my solution for the Coffee Masters HTML project from [Frontendmasters](https://frontendmasters.com/courses/web-development-v3/)
 
